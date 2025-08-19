@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+      <div class="container">
+        <nav>
+            <img src="Images/Logo.png" class="logo">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="header-text">
+            <p>Informatiker EFZ</p>
+            <h1>Hi, Ich bin <span>Supeshan Andruhilmin</span><br>Ich komme aus Sri Lanka</h1>
+        </div>
+      </div>
+
+      <!--------------about-------------->
+
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/ME.jpeg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">über mich</h1>
+                    <p> Ich bin Supeshan Andruhilmin. Ich bin 17 Jahre alt. Ich interesiere mich für den Lehreruf Informatiker EFZ.
+                        Ich habe diesen Website auch entwickelt sodass ich ein Lehrstelle finden kann.Ich bin im Juni 2023 in die 
+                        Schweiz gekommen. Um mich auf meine zukünftige Lehrstellevorzubereiten, besuche ich zurzeit die Klasse 
+                        Sprache und Kultur an der BerufswahlschuleLimmattal in Dietikon. Hier kann ich meine Deutschkenntnisse 
+                        vertiefen und mich auf die Lehre vorbereiten. Deutsch ist neben Mathematik und ICT mein Lieblingsfach 
+                        in der Schule. Englisch ist praktisch meine zweite Muttersprache. Ich verbrachte den grössten Teil
+                        meiner Schulzeit an der englischen Schule in Sri Lanka. 
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Fähigkeiten')">Fähigkeiten</p>
+                        <p class="tab-links" onclick="opentab('Erfahrungen')">Erfahrungen</p>
+                        <p class="tab-links" onclick="opentab('Ausbildung')">Ausbildung</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Fähigkeiten">
+                        <ul>
+                            <li><span>Selbstständige Initiative</span><br>Ich handle eigenständig und lerne aktiv Neues.</li>
+                            <li><span>Kommunikationsfähigkeit</span><br>Ich kann klar kommunizieren und gehe gut mit Feedback um</li>
+                            <li><span>Technisches Interesse und Lernbereitschaft</span><br>Ich interessiere mich für Technik und lerne gerne dazu.</li>
+                            <li><span>Reflektiertes Denken und Belastbarkeit</span><br>Ich handle eigenständig und lerne aktiv Neues.</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="Erfahrungen">
+                        <ul>
+                            <li><span>Powercoders Webentwicklungskurs</span><br>Ich habe einen intensiven Kurs bei Powercoders absolviert,<br> in dem ich HTML, 
+                                      und CSS gelernt habe.</li>
+                            <li><span>Portfolio-Website in Entwicklung</span><br>Ich entwickle aktuell meine eigene Portfolio-Website,<br> um meine Projekte, 
+                                      Fähigkeiten und Lernfortschritte zu präsentieren.</li>
+                            <li><span>ETH Zürich Besuch – Informatiker EFZ Einblick</span><br>Ich habe einen Einblick in den Beruf Informatiker EFZ <br>und erste Erfahrungen
+                                      mit dem Raspberry Pi gesammelt.</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="Ausbildung">
+                        <ul>
+                            <li><span>2024-2025</span><br>Sprache und Kultur 1, BWS Limmattal, Dietikon</li>
+                            <li><span>2023–2024</span><br>Vorkurs, BWS Limmattal, Schlieren</li>
+                            <li><span>2019–2023</span><br>Sekundarschule, Adventist International School, Sri Lanka</li>
+                            <li><span>2014–2018</span><br>Primarschule, Adventist International School, Sri Lanka</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-----services----->
+    <!-----------portfolio=------------>
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Meine Projekten</h1>
+            
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+</body>
+</html>
