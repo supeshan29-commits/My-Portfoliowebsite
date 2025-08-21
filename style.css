@@ -11,7 +11,7 @@ body{
 #header{
     width: 100%;
     height: 100vh;
-    background-image: url(images/BG-1.jpg);
+    background-image: url(BG-1.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -137,4 +137,5 @@ nav ul li a:hover::after{
 /*-----------portfolio------------*/
 #portfolio{
     padding: 40px 0;
+
 }
